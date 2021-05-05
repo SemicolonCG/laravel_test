@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\CountryController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,3 +22,11 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+
+
+Route::middleware(['auth'])->group(function () {
+    Route::resource('country', CountryController::class);
+    
+   
+});

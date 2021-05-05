@@ -1,3 +1,52 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.sidebar {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+
+    overflow-x: hidden;
+}
+
+.sidebar-list,
+.dropdown-btn {
+    padding: 5px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dropdown_content {
+    display: none;
+    background-color: darkgray;
+    opacity: 0.9;
+}
+
+.active,
+.sidebar-list a:hover,
+.dropdown-btn:hover,
+.dropdown_links a:hover {
+    text-emphasis-color: green;
+    color: rgb(27, 187, 160);
+}
+
+.show {
+    display: block;
+}
+
+.sidebar-list a,
+.dropdown_links a {
+    text-decoration: unset;
+    transition: ease-in;
+    text-emphasis-color: #fff;
+}
+.dropdown_links {
+    text-decoration: unset;
+    color: #fff;
+    text-align: center;
+}

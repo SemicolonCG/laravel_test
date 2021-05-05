@@ -32088,6 +32088,57 @@ select {
   --tw-backdrop-sepia: sepia(100%);
 }
 
+.sidebar {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  overflow-x: hidden;
+}
+
+.sidebar-list,
+.dropdown-btn {
+  padding: 5px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dropdown_content {
+  display: none;
+  background-color: darkgray;
+  opacity: 0.9;
+}
+
+.active,
+.sidebar-list a:hover,
+.dropdown-btn:hover,
+.dropdown_links a:hover {
+  -webkit-text-emphasis-color: green;
+          text-emphasis-color: green;
+  color: rgb(27, 187, 160);
+}
+
+.show {
+  display: block;
+}
+
+.sidebar-list a,
+.dropdown_links a {
+  text-decoration: unset;
+  transition: ease-in;
+  -webkit-text-emphasis-color: #fff;
+          text-emphasis-color: #fff;
+}
+
+.dropdown_links {
+  text-decoration: unset;
+  color: #fff;
+  text-align: center;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
